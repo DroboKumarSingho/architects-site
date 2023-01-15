@@ -11,13 +11,12 @@ img {
 
 header {
     background: rgba(255, 144, 14, 0.1);
-
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    max-width: 1450px;
+    max-width: 1500px;
     margin: 0px auto;
     align-items: center;
     padding: 50px 240px 50px 240px;
@@ -26,7 +25,8 @@ nav {
 
 header h3 {
     font-weight: 700;
-    font-size: 45px;
+font-size: 45px;
+line-height: 53px;
 }
 
 nav ul>li {
@@ -47,6 +47,7 @@ nav ul {
     max-width: 860px;
     margin: 0 auto;
     text-align: center;
+    
 
 }
 
@@ -57,6 +58,9 @@ nav ul {
 
 .about {
     margin-top: 20px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
 }
 
 .btn-primary {
@@ -78,8 +82,8 @@ nav ul {
 }
 
 .Fetures {
-    padding-left: 301px;
-    padding-right: 301px;
+    padding-left: 200px;
+    padding-right: 200px;
     display: flex;
     margin: 70px auto;
     gap: 70px;
@@ -122,7 +126,7 @@ nav ul {
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    margin: 130px 240px 130px 240px;
+    margin: 130px 240px 0 240px;
     gap: 54px;
 }
 
@@ -133,7 +137,9 @@ nav ul {
 .third-section-title {
     border-left: 5px solid #FF900E;
     padding-left: 26px;
-    padding-bottom: 24px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 25px;
     font-weight: 700px;
     font-size: 25px;
 }
@@ -146,9 +152,12 @@ nav ul {
     margin-bottom: 10px;
 }
 
+.third-section-content, .third-section-image {
+    flex: 1;
+}
+
 .third-section-image {
     width: 800px;
-    height: 1059px;
 }
 
 .btn-secondary {
@@ -161,7 +170,8 @@ nav ul {
     font-size: 50px;
     padding: 20px 20px;
     border-radius: 10px;
-    margin-top: 32px;
+    margin-left: -52px;
+    margin-top: -50px;
 }
 
 .forth-section p {
@@ -174,7 +184,6 @@ nav ul {
 
 .forth-section-head {
     margin-left: 250px;
-
 }
 
 .forth-section-head>h2 {
@@ -186,10 +195,11 @@ nav ul {
 .forth-section-items {
     display: flex;
     justify-content: space-between;
-    margin-right: 290px;
-    margin-left: 290px;
-    gap: 100px;
-
+    max-width: 1140px;
+    margin: auto;
+    
+    gap: 50px;
+    padding: 0 100px;
 }
 
 .forth-section-facts {
@@ -220,9 +230,11 @@ nav ul {
 
 .sponsor-images {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1450px;
-    margin: 0px 240px 100px 240px;
+    margin: 0px 0 100px 0;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 
@@ -263,4 +275,50 @@ footer>p {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .forth-section-items {
+        justify-content: center;
+    } 
+    .third-section {
+        margin: 100px 20px 0 20px;
+        flex-wrap: wrap;
+        gap: 54px;
+    }
+    .Fetures {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        margin: 70px auto;
+        gap: 70px;
+        align-items: center;
+    }
+    .Fetures-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 50px 20px 50px 20px;
+    }
+    .bannar-image {
+        padding: 50px 20px 40px 20px;
+    }
+    .forth-section-head {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+    nav ul>li {
+        margin-right: 28px;
+    }
+    .btn-secondary {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+.forth-section-facts {
+    flex-wrap: wrap;
+
 }
